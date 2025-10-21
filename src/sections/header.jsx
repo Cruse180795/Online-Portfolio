@@ -42,24 +42,27 @@ const Header = () => {
 
 
     return ( 
-        <header className="bg-gray-200 text-black border-b-2 border-gray-300 shadow-md">
-            <div className="flex items-center justify-between px-4 py-6">
-                <a href="#" className="text-3xl tracking-wide">Ryan Cruse</a>
-                <button onClick={toggleNavMenu} className=" bg-white px-3 py-2 rounded-md text-black">
-                    <IoMenu size={20}/>
+        <header className=" text-black border-b-2 border-gray-50">
+            <div className="flex items-center justify-between px-4 py-6 md:p-8">
+                <a href="#" className="text-3xl tracking-wide md:text-4xl">Ryan Cruse</a>
+                <button onClick={toggleNavMenu} className=" bg-white px-3 py-2 rounded-md text-black border text-lg md:text-xl">
+                    <IoMenu/>
                 </button>
+
+
+                
             </div>
 
             {isAnimating && (
                 <div
                     className={`h-screen w-full bg-gray-800 px-4 py-6 z-10 fixed top-0 left-0 
-                    transform ${isOpen ? 'animate-moveIn' : 'animate-moveOut'}`}
+                    transform ${isOpen ? 'animate-moveIn' : 'animate-moveOut'} md:px-8`}
                     onAnimationEnd={() => {
                     if (!isOpen) setIsAnimating(false);}}>
                     <div className="flex  justify-end mb-8">
                         {/** Close Menu Icon */}
-                        <button onClick={toggleNavMenu} className=" bg-white px-3 py-2 rounded-md text-black">
-                            <IoMdClose size={20}/>
+                        <button onClick={toggleNavMenu} className=" bg-white px-3 py-2 rounded-md text-black text-lg md:text-xl">
+                            <IoMdClose/>
                         </button>
                     </div>
 
@@ -67,50 +70,50 @@ const Header = () => {
 
                 <div className="flex flex-col justify-between">
                     {/**Mobile Menu Items */}
-                    <nav className="mt-6">
-                        <ul className="flex flex-col space-y-6">
+                    <nav className="mt-6 md:mt-8">
+                        <ul className="flex flex-col space-y-6 md:space-y-8">
                             <li>
-                                <NavLink icon={<IoHome size={20}/>} name="Home" href="#home"/>
+                                <NavLink icon={<IoHome/>} name="Home" href="#home"/>
                             </li>
                             <li>
-                                <NavLink icon={<IoPerson size={20}/>} name="About" href="#about"/>
+                                <NavLink icon={<IoPerson/>} name="About" href="#about"/>
                             </li>
                             <li>
-                                <NavLink icon={<IoCodeSlash size={20}/>} name="Projects" href="#projects"/>
+                                <NavLink icon={<IoCodeSlash/>} name="Projects" href="#projects"/>
                             </li>
                             <li>
-                                <NavLink icon={<IoChatbubbleEllipses size={20}/>} name="Contact" href="#contact"/>
+                                <NavLink icon={<IoChatbubbleEllipses/>} name="Contact" href="#contact"/>
                             </li>
                         </ul>
 
-                        <hr className="mt-6 text-gray-300"/>
+                        <hr className="mt-6 md:mt-8 text-gray-300"/>
 
                         {/** Download CV Link */}
-                        <div className="mt-6">
+                        <div className="mt-6 md:mt-8">
                             <a download="" target="_blank" className="flex items-center gap-x-3 text-lg font-medium bg-white text-black px-3 py-2 rounded-md">
-                                <IoDownload  size={20}/>
+                                <span className="border-r-2 pr-1.5"><IoDownload /></span>
                                 Download CV
                             </a>
                         </div>
                     </nav>
 
-                    <hr className="mt-6 text-gray-300"/>
+                    <hr className="mt-6 md:mt-8 text-gray-300"/>
 
                         {/** Socials & Theme Change*/}
                         <div className="">
                             <hr className="text-gray-300"/>
                             
-                            <div className="flex items-center justify-between mt-6">
+                            <div className="flex items-center justify-between mt-6 md:mt-8">
 
                                 {/** Theme Change Button */}
-                                <button className=" bg-white px-3 py-2 rounded-md text-black" onClick={toggleTheme}>
-                                    {isDarkMode ? <IoMoon size={20}/> :<IoSunny size={20}/>}
+                                <button className=" bg-white px-3 py-2 rounded-md text-black text-lg md:text-xl" onClick={toggleTheme}>
+                                    {isDarkMode ? <IoMoon/> :<IoSunny/>}
                                 </button>
 
                                 {/** Socials */}
-                                <div className="flex items-center gap-x-3 ">
-                                    <SocialIcon icon={<IoLogoGithub size={20} />} href="https://github.com/Cruse180795"/>
-                                    <SocialIcon icon={<IoLogoLinkedin size={20} />} href="https://www.linkedin.com/in/ryancruse1807/"/>
+                                <div className="flex items-center gap-x-3 md:gap-x-5">
+                                    <SocialIcon icon={<IoLogoGithub  />} href="https://github.com/Cruse180795"/>
+                                    <SocialIcon icon={<IoLogoLinkedin  />} href="https://www.linkedin.com/in/ryancruse1807/"/>
                                 </div>
                             </div>
                         </div>
