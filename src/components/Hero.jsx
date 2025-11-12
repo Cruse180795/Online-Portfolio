@@ -4,7 +4,7 @@ const Hero = () => {
 
             {/** Image Container */}
             <div>
-                <img src="/src/assets/images/dummy_600x400_ffffff_cccccc.png" alt="Avatar" className="rounded-2xl mx-auto"/>
+                <img src="/images/dummy_600x400_ffffff_cccccc.png" alt="Avatar" className="rounded-2xl mx-auto"/>
             </div>
             {/** Text Container */}
             <div className="text-center">
