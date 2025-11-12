@@ -40,3 +40,10 @@
   font-display: swap;
   font-style: italic;
 }
+
+
+#hero {
+  background-image: url('./assets/images/hero_gradient.jpg');
+  background-position: center;
+  background-size: cover;
+}
