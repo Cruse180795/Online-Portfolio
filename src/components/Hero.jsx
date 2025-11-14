@@ -1,13 +1,13 @@
 const Hero = () => {
     return ( 
-        <section className="px-4 py-5 h-screen space-y-6 text-white" id="hero">
+        <section className="px-4 py-8 space-y-6 text-white">
             {/** Image Container */}
             <div>
                 <img src="/images/dummy_600x400_ffffff_cccccc.png" alt="Avatar" className="rounded-2xl mx-auto"/>
             </div>
             {/** Text Container */}
             <div className="text-center">
-                <h1 className="text-4xl font-nunito font-semibold tracking-wider mb-6">Hey, I'm Ryan</h1>
+                <h2 className="text-4xl font-nunito font-semibold tracking-wider mb-6">Hey, I'm Ryan</h2>
                 <div className="space-y-5 mb-10">
                     <p className="uppercase font-roboto-mono font-light text-lg tracking-wide">I am a react and laravel developer based in newcastle upon tyne.</p>
                     <p className="uppercase font-roboto-mono font-light text-lg tracking-wide">Building modren, perfomant web apps with style and simplicity.</p>
@@ -24,7 +24,7 @@ const Hero = () => {
                     tracking-wide 
                     bg-white/10 
                     backdrop-blur-md 
-                    shadow-[0_10px_20px_0_rgba(0,0,0,0.2)]
+                    shadow-xl
                     duration-500
                     transition-all
                     ease-in-out
@@ -40,7 +40,7 @@ const Hero = () => {
                     font-roboto-mono 
                     font-semibold
                     tracking-wide 
-                    shadow-[0_10px_20px_0_rgba(0,0,0,0.2)] 
+                    shadow-xl 
                     duration-500
                     transition-all
                     ease-in-out
