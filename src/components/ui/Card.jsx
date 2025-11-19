@@ -24,7 +24,7 @@ const Card = ({projectImage, projectName, stackType, techStack=[], links=[], sta
             {/**Card Content */}
             <div className="my-6 space-y-5">
                 <div className="flex items-center justify-between">
-                    <h2 className="font-nunito tracking-wider font-semibold text-lg" >{projectName}</h2>
+                    <h2 className="font-nunito tracking-wider font-semibold text-base" >{projectName}</h2>
                     <h3 className=" font-roboto-mono tracking-wide text-xs text-white-grey p-1.5 rounded-lg border-2 border-chalk/40 ">{stackType}</h3>
                 </div>
 
