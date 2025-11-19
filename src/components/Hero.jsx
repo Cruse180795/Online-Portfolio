@@ -7,7 +7,7 @@ const Hero = () => {
             </div>
             {/** Text Container */}
             <div className="text-center">
-                <h2 className="text-4xl font-nunito font-semibold tracking-wider mb-6">Hey, I'm Ryan</h2>
+                <h2 className="text-4xl font-nunito font-semibold tracking-wider mb-6">Welcome To My Portfolio</h2>
                 <div className="space-y-5 mb-10">
                     <p className="uppercase font-roboto-mono font-light text-lg tracking-wide">I am a react and laravel developer based in newcastle upon tyne.</p>
                     <p className="uppercase font-roboto-mono font-light text-lg tracking-wide">Building modren, perfomant web apps with style and simplicity.</p>

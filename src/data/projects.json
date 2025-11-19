@@ -1,0 +1,58 @@
+[
+    {
+        "id": "gazetteer",
+        "category": "Web Development",
+        "status": "In Progress",
+        "projectName": "Gazetteer",
+        "projectImage": "/images/dummy_600x400_ffffff_cccccc.png",
+        "stackType": "Frontend & Backend",
+        "techStack": [
+            { "name": "React", "src": "/images/icons/react-icon.svg" },
+            { "name": "Laravel", "src": "/images/icons/laravel-icon.svg" },
+            { "name": "Tailwind CSS", "src": "/images/icons/tailwind-icon.svg" },
+            { "name": "HTML5", "src": "/images/icons/html-icon.svg" },
+            { "name": "VS Code", "src": "/images/icons/vscode-icon.svg" },
+            { "name": "GitHub", "src": "/images/icons/github-icon.svg" },
+            { "name": "Figma", "src": "/images/icons/figma-icon.svg" },
+            { "name": "Postman", "src": "/images/icons/postman-icon.svg" }
+        ],
+        "links": [
+            { "name": "Source Code", "url": "" },
+            { "name": "Live Site", "url": "" }
+        ]
+    },
+    {
+        "id": "block-breaker-2d",
+        "category": "Game Development",
+        "status": "Completed",
+        "projectName": "Block Breaker 2D",
+        "projectImage": "/images/projects/block-breaker-2d.jpg",
+        "stackType": "Game Development",
+        "techStack": [
+            { "name": "Unity", "src": "/images/icons/unity-icon.svg" },
+            { "name": "C#", "src": "/images/icons/csharp-icon.svg" },
+            { "name": "Visual Studio", "src": "/images/icons/visual-studio-icon.svg" }
+        ],
+        "links": [
+            { "name": "Live Site", "url": "https://rcruse1807.itch.io/block-breaker-2d" }
+        ]
+    },
+    {
+        "id": "space-defender",
+        "category": "Game Development",
+        "status": "Completed",
+        "projectName": "Space Defender",
+        "projectImage": "/images/projects/space-defender.jpg",
+        "stackType": "Game Development",
+        "techStack": [
+            { "name": "Unity", "src": "/images/icons/unity-icon.svg" },
+            { "name": "C#", "src": "/images/icons/csharp-icon.svg" },
+            { "name": "Visual Studio", "src": "/images/icons/visual-studio-icon.svg" }
+        ],
+        "links": [
+            { "name": "Live Site", "url": "https://rcruse1807.itch.io/space-defender" }
+        ]
+    }
+
+    
+]

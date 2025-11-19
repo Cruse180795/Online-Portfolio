@@ -1,9 +1,27 @@
 @import 'tailwindcss';
 
-/* Tailwind v4: define font tokens via @theme */
+
 @theme {
   --font-nunito: "Nunito", sans-serif;
   --font-roboto-mono: "Roboto Mono", monospace;
+
+
+  /*Colors*/
+  --color-dark-500: oklch(0.0987 0.0499 277.92);
+  --color-dark-300: oklch(0.1886 0.0499 277.92);
+
+  --color-chalk: oklch(0.9992 0.0039 106.47);
+  --color-white-grey: oklch(0.8968 0.0011 197.14);
+  --color-jet: oklch(0.285 0 0);
+  --color-oxford-blue: oklch(0.2824 0.0272 257.53);
+
+  --color-primary-500: oklch(0.5488 0.1481 249.68);
+  --color-primary-300: oklch(0.7089 0.1481 249.68);
+
+  --color-secondary-500: oklch(0.323 0.1763 290.41);
+  --color-secondary-300: oklch(0.4959 0.1763 290.41);
+
+
 }
 
 
