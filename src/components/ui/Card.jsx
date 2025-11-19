@@ -8,7 +8,7 @@ const Card = ({projectImage, projectName, stackType, techStack=[], links=[], sta
 
 
     return ( 
-        <div className="border-2 border-white/20 bg-white/10 backdrop-blur-md rounded-lg text-chalk p-6 shadow-lg shadow-white-grey/20">
+        <div className="border-2 border-white/20 bg-white/10 backdrop-blur-md rounded-lg text-chalk p-4 shadow-lg shadow-white-grey/20">
             <div className="">
                 {isCompleted && (
                     <img src={projectImage} alt={projectName} className="rounded-lg shadow-xl"/>

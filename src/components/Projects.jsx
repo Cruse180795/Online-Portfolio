@@ -31,7 +31,7 @@ const Projects = ({sectionId}) => {
                     onClick={() => setActiveCategory("All")}
                 />
                 <CategoryButton
-                    label="Freelance Projects"
+                    label="Freelance"
                     isActive={activeCategory === "Freelance"}
                     onClick={() => setActiveCategory("Freelance")}
                 />
