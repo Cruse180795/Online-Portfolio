@@ -28,7 +28,7 @@ function Contact({ projectid }) {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors, isSubmitSuccessful },
   } = useForm({
     defaultValues: {
       senders_name: "",
@@ -75,7 +75,10 @@ function Contact({ projectid }) {
   }, [sendError]);
 
   return (
-    <section className="text-jet bg-chalk py-10 space-y-10 px-4" id={projectid}>
+    <section
+      className="bg-linear-to-tr from-dark-500 to-dark-300 text-chalk py-10 space-y-10 px-4"
+      id={projectid}
+    >
       <SectionHeader>
         <SectionTitle title="Contact the developer" />
         <SectionSubTitle subtitle="Have an idea or project? Let’s build something great." />
@@ -83,7 +86,7 @@ function Contact({ projectid }) {
 
       {/* Display Successfully Email Sent */}
       {messageSent && (
-        <div className="p-2 border-[1.5px] border-emerald-500 text-emerald-500 rounded-lg shadow-lg flex items-center justify-center gap-x-1.5">
+        <div className="p-2 border-[1.5px] border-emerald-500 bg-emerald-300/40 text-emerald-200 shadow-emerald-400/20 rounded-lg shadow-lg flex items-center justify-center gap-x-1.5">
           <p className="font-roboto-mono tracking-wide font-light capitalize">
             Message sent successfully
           </p>
@@ -95,7 +98,7 @@ function Contact({ projectid }) {
 
       {/* Display Error Message In Case Email Can't Be Sent */}
       {sendError && (
-        <div className="p-2 border-[1.5px] border-red-500 text-red-500 rounded-lg shadow-lg flex items-center justify-center gap-x-1.5">
+        <div className="p-2 border-[1.5px] border-red-500 bg-red-300/40 text-red-200 rounded-lg shadow-lg shadow-red-400/20 flex items-center justify-center gap-x-1.5">
           <p className="font-roboto-mono tracking-wide font-light capitalize">
             Failed to send message
           </p>
@@ -107,7 +110,7 @@ function Contact({ projectid }) {
 
       <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
         {/* NAME */}
-        <div className="space-y-1.5">
+        <div className="space-y-2">
           <div className="flex items-center justify-between">
             <label
               htmlFor="senders_name"
@@ -125,9 +128,15 @@ function Contact({ projectid }) {
           <input
             id="senders_name"
             type="text"
-            className={`w-full px-4 py-2 border-[1.5px] rounded-lg shadow-lg outline-none ${
-              errors.senders_name ? "border-red-500" : ""
-            }`}
+            className={`w-full px-4 py-2 border-2 rounded-lg shadow-lg outline-none
+                ${
+                  errors.senders_name
+                    ? "border-red-500 bg-red-300/40 shadow-red-400/20"
+                    : isSubmitSuccessful
+                      ? "border-emerald-500 bg-emerald-300/40 shadow-emerald-400/20"
+                      : "border-chalk/20 bg-chalk/10 shadow-white-grey/10"
+                }
+              `}
             {...register("senders_name", {
               required: "Name is required",
               maxLength: {
@@ -139,7 +148,7 @@ function Contact({ projectid }) {
         </div>
 
         {/* SUBJECT */}
-        <div className="space-y-1.5">
+        <div className="space-y-2">
           <div className="flex items-center justify-between">
             <label
               htmlFor="senders_subject"
@@ -157,9 +166,15 @@ function Contact({ projectid }) {
           <input
             id="senders_subject"
             type="text"
-            className={`w-full px-4 py-2 border-[1.5px] rounded-lg shadow-lg outline-none ${
-              errors.senders_subject ? "border-red-500" : ""
-            }`}
+            className={`w-full px-4 py-2 border-2 rounded-lg shadow-lg outline-none
+                ${
+                  errors.senders_subject
+                    ? "border-red-500 bg-red-300/40 shadow-red-400/20"
+                    : isSubmitSuccessful
+                      ? "border-emerald-500 bg-emerald-300/40 shadow-emerald-400/20"
+                      : "border-chalk/20 bg-chalk/10 shadow-white-grey/10"
+                }
+              `}
             {...register("senders_subject", {
               required: "Subject is required",
               maxLength: {
@@ -171,7 +186,7 @@ function Contact({ projectid }) {
         </div>
 
         {/* EMAIL */}
-        <div className="space-y-1.5">
+        <div className="space-y-2">
           <div className="flex items-center justify-between">
             <label
               htmlFor="senders_email"
@@ -189,9 +204,15 @@ function Contact({ projectid }) {
           <input
             id="senders_email"
             type="email"
-            className={`w-full px-4 py-2 border-[1.5px] rounded-lg shadow-lg outline-none ${
-              errors.senders_email ? "border-red-500" : ""
-            }`}
+            className={`w-full px-4 py-2 border-2 rounded-lg shadow-lg outline-none
+                ${
+                  errors.senders_email
+                    ? "border-red-500 bg-red-300/40 shadow-red-400/20"
+                    : isSubmitSuccessful
+                      ? "border-emerald-500 bg-emerald-300/40 shadow-emerald-400/20"
+                      : "border-chalk/20 bg-chalk/10 shadow-white-grey/10"
+                }
+              `}
             {...register("senders_email", {
               required: "Email is required",
               pattern: {
@@ -203,7 +224,7 @@ function Contact({ projectid }) {
         </div>
 
         {/* MESSAGE */}
-        <div className="space-y-1.5">
+        <div className="space-y-2">
           <div className="flex items-center justify-between">
             <label
               htmlFor="senders_message"
@@ -222,9 +243,15 @@ function Contact({ projectid }) {
             id="senders_message"
             cols={6}
             rows={6}
-            className={`w-full px-4 py-2 border-[1.5px] rounded-lg shadow-lg outline-none ${
-              errors.senders_message ? "border-red-500" : ""
-            }`}
+            className={`w-full px-4 py-2 border-2 rounded-lg shadow-lg outline-none
+                ${
+                  errors.senders_message
+                    ? "border-red-500 bg-red-300/40 shadow-red-400/20"
+                    : isSubmitSuccessful
+                      ? "border-emerald-500 bg-emerald-300/40 shadow-emerald-400/20"
+                      : "border-chalk/20 bg-chalk/10 shadow-white-grey/10"
+                }
+              `}
             {...register("senders_message", {
               required: "Message is required",
               maxLength: {
@@ -238,7 +265,7 @@ function Contact({ projectid }) {
         <button
           disabled={isSubmitting}
           type="submit"
-          className="px-4 py-2 rounded-lg shadow-lg w-full text-chalk font-roboto-mono font-semibold tracking-wide bg-linear-to-br from-primary-300 to-primary-500"
+          className="px-4 py-2 rounded-lg shadow-lg shadow-primary-300/30 w-full text-chalk font-roboto-mono font-semibold tracking-wide bg-linear-to-br from-primary-300 to-primary-500"
         >
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
