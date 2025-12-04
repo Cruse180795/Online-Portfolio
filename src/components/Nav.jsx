@@ -24,11 +24,11 @@ const Nav = () => {
     }
 
 
-    return ( 
+    return (
         <nav className="px-4 py-5 flex items-center justify-between border-b border-white/20 relative shadow-xl">
             {/**Brand */}
             <h1 className="text-white font-nunito font-semibold tracking-wider text-2xl border-b-2 pb-0.5 border-white/20 shadow-xl">Ryan Cruse</h1>
-                
+
             {/**Hamburger Menu */}
             <button className="p-2 bg-white/10 backdrop-blur-md shadow-xl border-2 border-white/20 rounded-lg" onClick={handleMenuToggle}>
                 {isMenuOpen ? <RiCloseLargeFill color="white" size={18}/> : <RiMenuAddLine color="white" size={18}/>  }
@@ -48,7 +48,7 @@ const Nav = () => {
 
                     <ul className="space-y-4 font-roboto-mono tracking-wide">
                         <MobileNavLink icon={<FaGithub size={18}/>} linkTo="https://github.com/Cruse180795" linkName="GitHub"/>
-                        <MobileNavLink icon={<FaLinkedinIn size={18}/>} linkTo="" linkName="LinkedIn"/>
+                        <MobileNavLink icon={<FaLinkedinIn size={18}/>} linkTo="https://www.linkedin.com/in/ryancruse1807/" linkName="LinkedIn"/>
                     </ul>
                 </div>
             )}

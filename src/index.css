@@ -1,4 +1,6 @@
+/* globals.css */
 @import "tailwindcss";
+@plugin "@toolwind/corner-shape";
 
 @theme {
     /*Font Nunito is used for heading*/
@@ -62,4 +64,10 @@
     background-image: url("./assets/images/hero_gradient.jpg");
     background-position: center;
     background-size: cover;
+}
+
+.squircle {
+
+  corner-shape: squircle;
+
 }
