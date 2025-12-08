@@ -23,6 +23,12 @@
 
     --color-secondary-500: oklch(0.323 0.1763 290.41);
     --color-secondary-300: oklch(0.4959 0.1763 290.41);
+
+    --color-accent-500: oklch(0.78 0.11 150);
+    --color-accent-300: oklch(0.88 0.05 150);
+
+
+
 }
 @font-face {
     font-family: "Nunito";

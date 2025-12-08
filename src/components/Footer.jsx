@@ -1,5 +1,5 @@
 // Import Icons
-import { FaGithub } from "react-icons/fa";
+import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -21,7 +21,7 @@ function Footer() {
           rel="noopener noreferrer"
           className="flex items-center gap-x-2 text-sm px-4 py-2 corner-squircle rounded-4xl border-2 border-primary-300 text-chalk bg-primary-500/30 font-roboto-mono tracking-wide font-semibold"
         >
-          <FaGithub className="text-base" />
+          <FaGithubAlt className="text-base" />
           <span className="border-l-2 pl-2">Github</span>
         </a>
 
