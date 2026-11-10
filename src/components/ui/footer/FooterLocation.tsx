@@ -1,4 +1,4 @@
-import FooterLinkWrapper from "./FooterLinkWrapper";
+import FooterLinkWrapper from "./FooterSection";
 
 export default function FooterLocation() {
   return (
